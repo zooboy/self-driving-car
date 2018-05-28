@@ -1,7 +1,6 @@
 ## Behavioral Cloning 
 
 
-
 ---
 
 ### Behavioral Cloning Project
@@ -22,13 +21,6 @@ The goals / steps of this project are the following:
 [image3]: ./images/s60resized.png "resized"
 [image4]: ./images/s60flip.png "flipped"
 [image5]: ./images/lossvs.png "loss-chart"
-
----
-
-
-
-
-
 
 
 The project includes the following files:
@@ -149,4 +141,4 @@ I modified 2 positions in the drive.py:
 (2).set the image size to 80x160,the former drive.py was designed for the original image size,so it need to resize the image as feeding data.
 
 ----------------------
-email : ** zooboy@vip.sina.com **
+**email**:*zooboy@vip.sina.com*
