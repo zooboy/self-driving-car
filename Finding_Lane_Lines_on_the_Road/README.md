@@ -14,12 +14,12 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./test_images_output/solidWhiteCurve_piped.jpg "solidWhiteCurve"
-[image2]: ./test_images_output/solidWhiteRight_piped.jpg "solidWhiteRight"
-[image3]: ./test_images_output/solidYellowCurve_piped.jpg "solidYellowCurve"
-[image4]: ./test_images_output/solidYellowCurve2_piped.jpg "solidYellowCurve2"
-[image5]: ./test_images_output/solidYellowLeft_piped.jpg "solidYellowLeft"
-[image6]: ./test_images_output/whiteCarLaneSwitch_piped.jpg "whiteCarLaneSwitch"
+[image1]: /test_images_output/solidWhiteCurve_piped.jpg "solidWhiteCurve"
+[image2]: /test_images_output/solidWhiteRight_piped.jpg "solidWhiteRight"
+[image3]: /test_images_output/solidYellowCurve_piped.jpg "solidYellowCurve"
+[image4]: /test_images_output/solidYellowCurve2_piped.jpg "solidYellowCurve2"
+[image5]: /test_images_output/solidYellowLeft_piped.jpg "solidYellowLeft"
+[image6]: /test_images_output/whiteCarLaneSwitch_piped.jpg "whiteCarLaneSwitch"
 ---
 
 ### 1. build the pipeline
