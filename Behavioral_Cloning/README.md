@@ -1,7 +1,7 @@
 ## Behavioral Cloning 
 
+------------------
 
----
 
 ### Behavioral Cloning Project
 
@@ -35,10 +35,9 @@ Using the Udacity provided simulator and my drive.py file, the car can be driven
 
 [the simlator download](https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58ae4419_windows-sim/windows-sim.zip)
 
-```%run drive.py model.h5
 ```
-
-
+%run drive.py model.h5
+```
 The model.py file contains the code for dataprocessing, training , saving the convolution neural network and executing the simulator. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
 
 ### Model Architecture and Training Strategy
