@@ -49,6 +49,8 @@ I have tried the optional challenge,but failed to pass it.I thought the quadrang
 ![alt text][image5]
 ![alt text][image6]
 
+![image](https://github.com/zooboy/self-driving-car/raw/master/Finding_Lane_Lines_on_the_Road/test_images_output/solidWhiteCurve_piped.jpg)
+
 in ```test_videos_output``` folder you can find the test video files  
 
 ### 2. Identify potential shortcomings 
