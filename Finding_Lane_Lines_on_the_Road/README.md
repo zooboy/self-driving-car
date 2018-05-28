@@ -11,15 +11,6 @@ The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
 
-
-[//]: # (Image References)
-
-[image1]:(https://github.com/zooboy/self-driving-car/raw/master/Finding_Lane_Lines_on_the_Road/test_images_output/solidWhiteCurve_piped.jpg)"solidWhiteCurve"
-[image2]: /test_images_output/solidWhiteRight_piped.jpg "solidWhiteRight"
-[image3]: /test_images_output/solidYellowCurve_piped.jpg "solidYellowCurve"
-[image4]: /test_images_output/solidYellowCurve2_piped.jpg "solidYellowCurve2"
-[image5]: /test_images_output/solidYellowLeft_piped.jpg "solidYellowLeft"
-[image6]: /test_images_output/whiteCarLaneSwitch_piped.jpg "whiteCarLaneSwitch"
 ---
 
 ### 1. build the pipeline
@@ -42,14 +33,18 @@ intercept, then according to the linear equation return the lines extrapolated t
 I have tried the optional challenge,but failed to pass it.I thought the quadrangle  mask-region is not fit for it.and the curve lane need some other method to detect and draw lines.
 
 
-![alt text][image1]
-![alt text][image2]
-![alt text][image3]
-![alt text][image4]
-![alt text][image5]
-![alt text][image6]
+![image](https://github.com/zooboy/self-driving-car/raw/master/Finding_Lane_Lines_on_the_Road/test_images_output/solidWhiteCurve_piped.jpg)
+
+![image](https://github.com/zooboy/self-driving-car/raw/master/Finding_Lane_Lines_on_the_Road/test_images_output/solidWhiteRight_piped.jpg )
+
+![image](https://github.com/zooboy/self-driving-car/raw/master/Finding_Lane_Lines_on_the_Road/test_images_output/solidYellowCurve_piped.jpg )
+
+![image](https://github.com/zooboy/self-driving-car/raw/master/Finding_Lane_Lines_on_the_Road/test_images_output/solidYellowCurve2_piped.jpg )
+
+![image](https://github.com/zooboy/self-driving-car/raw/master/Finding_Lane_Lines_on_the_Road/test_images_output/solidYellowLeft_piped.jpg )
 
 
+![image](https://github.com/zooboy/self-driving-car/raw/master/Finding_Lane_Lines_on_the_Road/test_images_output/whiteCarLaneSwitch_piped.jpg )
 
 in ```test_videos_output``` folder you can find the test video files  
 
