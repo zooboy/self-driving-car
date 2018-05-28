@@ -1,4 +1,4 @@
-#**Traffic Sign Recognition** 
+**Traffic Sign Recognition** 
 
 
 
@@ -33,17 +33,18 @@ The goals / steps of this project are the following:
 
 
 ---
-### README
+
+**README**
 
 
 
 The project code  see in  .ipynb file.
 
-###Data Set Summary & Exploration
+Data Set Summary & Exploration
 
-####1. Basic summary of the data set.
+1. Basic summary of the data set.
 
-#####I used the numpy library,basically used the 'shape' attribute to calculate summary statistics of the trafficsigns data set
+I used the numpy library,basically used the 'shape' attribute to calculate summary statistics of the trafficsigns data set
 
 The training dataset comes from [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset).
 
@@ -53,13 +54,13 @@ The training dataset comes from [German Traffic Sign Dataset](http://benchmark.i
 * The shape of a traffic sign image is (32,32,3)
 * The number of unique classes/labels in the data set is 43
 
-####2. visualization of the dataset.
+2. Visualization of the dataset.
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data  ,I designed a function to show the data ,the function called 'static_show',It had 3 parameters:the data,the label, and a bool variable callednorm (whether to show in normalization).In the normed mode,we can compare the every class ratio of trainset,validset and testset. Besides,I made a mapping between the class id to the description,and put it as the x-axis in the plot.
 
 ![alt text][image1]
 ![alt text][image9]
-###Design and Test a Model Architecture
+Design and Test a Model Architecture
 
 
 At first step,I need to design a function to show the images,and not only show the image itself,but also can output the info of these images.the function like this:'show_image(index = None,X =X_train,y=y_train,showgray =False)',the 'index' means the images's index, default is 'None',then we would pick it randomly.the X is the  data and the y is the label part.the label to use show the detail info of signs.like this:
@@ -75,7 +76,7 @@ Here is an example of after grayscaling and normalization.
 ![alt text][image11]
 
 
-####2. Describe final model architecture
+3. Model Architecture
 The final model refer to leNet,same as 5 layers architecture,2 layers for convolution and max pooling.1 layer for flatten, and then ,2 layers for fully connection,at last, a softmax function for classfication.The different from LeNet is that:
 
 
@@ -111,11 +112,10 @@ The final model results were:
 
 
  
+4.Test a Model on New Images
 
-###Test a Model on New Images
 
-
-#####Here are five German traffic signs that I found on the web:
+Here are five German traffic signs that I found on the web:
 
 
 ![alt text][image3]
@@ -124,11 +124,11 @@ In order to compare the prediction and the real label,I made some data analysis 
 
 ![alt text][image13]
 
-##### Based on the data ,I drawn a hist chart:
+Based on the data ,I drawn a hist chart:
 
 ![alt text][image14]
 
-##### Obviously, the 'Pedestrians' sign got the highest recognizing error rate.
+Obviously, the 'Pedestrians' sign got the highest recognizing error rate.
 
 Here are the results of the prediction:
 
@@ -141,18 +141,18 @@ I defined a function to show  the probabilities for each prediction,called 'get_
 
 For the first image, the model is sure that this is a Speed limit (20km/h) sign (probability of 30%), and the image does contain a Speed limit (20km/h),but the fifth top probability is a negative value,it's very odd,I need to look up some materials. The wrong recongnize one 'Yield', the first top probability is 10.05%,represented 'Priority road', the second top probability was 9.59% represented 'Yield',the two probabilities are very close.It appears the model is not quite sure which one is right. 
 
-##### The top five soft max probabilities were:
+The top five soft max probabilities were:
 
 ![alt text][image15]
 
 
-### Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
+5.Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 
 I generated a series of images which in the first convolution layer after the convolutional operation.
-##### The original image:
+The original image:
 ![alt text][image17]
 
-##### Extract in convolution layer 1:
+Extract in convolution layer 1:
 ![alt text][image16]
 
 ----------------------
