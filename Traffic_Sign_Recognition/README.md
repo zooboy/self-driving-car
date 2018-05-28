@@ -40,8 +40,6 @@ The goals / steps of this project are the following:
 
 The project code  see in  .ipynb file.
 
-Data Set Summary & Exploration
-
 1. Basic summary of the data set.
 
 I used the numpy library,basically used the 'shape' attribute to calculate summary statistics of the trafficsigns data set
@@ -60,10 +58,11 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 
 ![alt text][image1]
 ![alt text][image9]
-Design and Test a Model Architecture
+
+3. Data preparation
 
 
-At first step,I need to design a function to show the images,and not only show the image itself,but also can output the info of these images.the function like this:'show_image(index = None,X =X_train,y=y_train,showgray =False)',the 'index' means the images's index, default is 'None',then we would pick it randomly.the X is the  data and the y is the label part.the label to use show the detail info of signs.like this:
+I design a function to show the images,and not only show the image itself,but also can output the info of these images.the function like this:'show_image(index = None,X =X_train,y=y_train,showgray =False)',the 'index' means the images's index, default is 'None',then we would pick it randomly.the X is the  data and the y is the label part.the label to use show the detail info of signs.like this:
 
 ![alt text][image10]
 
@@ -76,7 +75,7 @@ Here is an example of after grayscaling and normalization.
 ![alt text][image11]
 
 
-3. Model Architecture
+4. Model Architecture
 The final model refer to leNet,same as 5 layers architecture,2 layers for convolution and max pooling.1 layer for flatten, and then ,2 layers for fully connection,at last, a softmax function for classfication.The different from LeNet is that:
 
 
@@ -90,7 +89,7 @@ The final model refer to leNet,same as 5 layers architecture,2 layers for convol
 
 
 
-####3. Describe of model training. 
+5 .Model training. 
 
 To train the model, I used the hyper-parameters as follow:
  
@@ -112,7 +111,7 @@ The final model results were:
 
 
  
-4.Test a Model on New Images
+6.Test the model on new images
 
 
 Here are five German traffic signs that I found on the web:
@@ -146,7 +145,7 @@ The top five soft max probabilities were:
 ![alt text][image15]
 
 
-5.Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
+7.Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 
 I generated a series of images which in the first convolution layer after the convolutional operation.
 The original image:
