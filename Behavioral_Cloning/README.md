@@ -1,10 +1,10 @@
-#**Behavioral Cloning** 
+## Behavioral Cloning 
 
 
 
 ---
 
-**Behavioral Cloning Project**
+### Behavioral Cloning Project
 
 The goals / steps of this project are the following:
 
@@ -49,9 +49,9 @@ Using the Udacity provided simulator and my drive.py file, the car can be driven
 
 The model.py file contains the code for dataprocessing, training , saving the convolution neural network and executing the simulator. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
 
-###Model Architecture and Training Strategy
+### Model Architecture and Training Strategy
 
-####1. Description of model architecture 
+#### 1. Description of model architecture 
 The model consists of a convolution neural network (you can see this in model.py  code in line 216-234) 
 The CNN model I used is based the Nvidia architecture,and I made several modified on it.
 
@@ -60,30 +60,30 @@ The model contains 5 convolution layers and 3 fully-connect layers.
 The model includes RELU layers to introduce nonlinearity .
 The data is normalized in the model using a Keras lambda layer,besides this , I add a cropping layer to cut the image landscape part to make the model focus on the lane,and reduce the training time.(see in architecture graph)
 
-####2. Attempts to reduce overfitting in the model
+#### 2. Attempts to reduce overfitting in the model
 
 The model contains 3 dropout layers in order to reduce overfitting (model.py lines 226-230). And I set the dropout factor to 0.4.
 
 The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 119). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
-####3. Model parameter tuning
+#### 3. Model parameter tuning
 
 The model used an adam optimizer, so the learning rate was not tuned manually,
 besided this,I used 'ModelCheckpoint' to monitor the val loss and catch the lowest loss result.I set the train epoches to 7, In my experience, over that epochs the model appeared a bit overfitting.
 
-####4. Appropriate training data
+#### 4. Appropriate training data
 
 Training data was chosen to keep the vehicle driving on the road.I choosed the clock-wise and counter clock-wise lap of track 1 to capture the driving behavior. I used a combination of center lane driving, view from the left and right sides of the road,and I flipped them to augment the dataset.I cropped the landscape part in the image to make the model focus on the road(see in the code line 218). In order to cut down the trainning time,I resize these images from 160x320 to 80x160 according to Paul Heraty's advices which listed in his 'Behavioral Cloning Cheatsheet' in Slack forum .
 
 For details about how I created the training data, see the next section. 
 
 
-####5. Solution Design Approach
+#### 5. Solution Design Approach
 
 The overall strategy for deriving a model architecture was :
 
-1. comparing these models' val loss in same dataset before overfitting.
-2. observing the models' performance in simulator.
+(1). comparing these models' val loss in same dataset before overfitting.
+(2). observing the models' performance in simulator.
 
 My first step was to use a convolution neural network model similar to the project 'Traffic-Sign-Classifier' , In that project I used the LeNet model as the baseline. For comparation, I used the sample data Udacity supplied in this project as training and validation dataset.
 
@@ -93,7 +93,7 @@ In order to gauge how well the model was working, I split the sample data into a
 The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track,to improve the driving behavior in these cases, I captured more curve and recovery scenes.
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
-####6. Final Model Architecture
+#### 6. Final Model Architecture
 
 The final model architecture (model.py lines 216-232) consisted of 5 convolution layers and 3 fully-connect layers.
 
@@ -103,7 +103,7 @@ I found this model had a bit overfitting when training epoches over 3 times.So,I
 
 ![alt text][image1]
 
-####7. Creation of the Training Set & Training Process
+#### 7. Creation of the Training Set & Training Process
 
 To capture good driving behavior, I captured the center\left\right image,and used them as trainset and validation set.But the picture size is large,and the training speed was too slow, so I resized them.
 the center\left\right view of image like this(size:160x320):
@@ -122,13 +122,13 @@ After the collection process, I had 25464 number of data points.
 
 In data process part,firstly, I  need to read these image and set the steer value of them(see in code lines :94-107).I do this process by:
 
-1.read the csv flie, and split the lines as two parts: part 1: the 'src.' of image(3 sorts: the center,the left, the right),part 2 ,the steer value. I set the steer factor as 0.2. 
+(1).read the csv flie, and split the lines as two parts: part 1: the 'src.' of image(3 sorts: the center,the left, the right),part 2 ,the steer value. I set the steer factor as 0.2. 
 
 left image steer value = center steer value+ 0.2,
 
 right image steer value =center steer value- 0.2,
 
-2.output  a 2-dimensions Python List.the first dimension store the image file address, the second one store the steer value according the image.After that,I shuffle it.
+(2).output  a 2-dimensions Python List.the first dimension store the image file address, the second one store the steer value according the image.After that,I shuffle it.
 
 
 Considering the image data points  huge RAM occupied could exhust computer memory.I used a generator to generate the data batch by batch.(see code lines:126-153 ),image flip and resize also processed in this generator section. 
@@ -144,6 +144,9 @@ I used this training data for training the model. The validation set helped dete
 
 I modified 2 positions in the drive.py:
 
-1.set the speed to 15; I think the steer is related to the speed ,and the speed is not in the training target,so need to finetune it,and the model should perform better if it match the mean speed in training mode.
+(1).set the speed to 15; I think the steer is related to the speed ,and the speed is not in the training target,so need to finetune it,and the model should perform better if it match the mean speed in training mode.
 
-2.set the image size to 80x160,the former drive.py was designed for the original image size,so it need to resize the image as feeding data.
+(2).set the image size to 80x160,the former drive.py was designed for the original image size,so it need to resize the image as feeding data.
+
+----------------------
+email : ** zooboy@vip.sina.com **
