@@ -14,7 +14,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-![image1]:(https://github.com/zooboy/self-driving-car/blob/master/Finding_Lane_Lines_on_the_Road/test_images_output/solidWhiteCurve_piped.jpg)"solidWhiteCurve"
+[image1]:(https://github.com/zooboy/self-driving-car/raw/master/Finding_Lane_Lines_on_the_Road/test_images_output/solidWhiteCurve_piped.jpg)"solidWhiteCurve"
 [image2]: /test_images_output/solidWhiteRight_piped.jpg "solidWhiteRight"
 [image3]: /test_images_output/solidYellowCurve_piped.jpg "solidYellowCurve"
 [image4]: /test_images_output/solidYellowCurve2_piped.jpg "solidYellowCurve2"
@@ -49,7 +49,7 @@ I have tried the optional challenge,but failed to pass it.I thought the quadrang
 ![alt text][image5]
 ![alt text][image6]
 
-![image](https://github.com/zooboy/self-driving-car/raw/master/Finding_Lane_Lines_on_the_Road/test_images_output/solidWhiteCurve_piped.jpg)
+
 
 in ```test_videos_output``` folder you can find the test video files  
 
