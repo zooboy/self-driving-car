@@ -5,9 +5,7 @@
 
 [//]: # (Image References)
 
-[image1]: /RMSE.png "RMSE"
-
-
+[image1]: ./RMSE.png "RMSE"
 
 
 #### 1.Understand Extended Kalman Filter 
