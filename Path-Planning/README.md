@@ -4,8 +4,8 @@
 
 
 [//]: # (Image References)
-[image1]: /finite_state.png "finite_state_machine"
-[image2]: /nearcars.png "near cars"
+[image1]: ./finite_state.png "finite_state_machine"
+[image2]: ./nearcars.png "near cars"
 
 ### The project information and code running dependencies link : [project info](https://github.com/udacity/CarND-Path-Planning-Project) 
 
@@ -73,9 +73,9 @@ So I need add a extra punish on that to avoid successive change lane operations,
 
 [//]: # (Image References)
 
-[image10]: /spline.png "transform"
-[image20]: /insertpoints.png "insertpoints"
-[image30]: /jerk_point.png "jerk_point"
+[image10]: ./spline.png "transform"
+[image20]: ./insertpoints.png "insertpoints"
+[image30]: ./jerk_point.png "jerk_point"
 
 
 #### 1.Model selection
