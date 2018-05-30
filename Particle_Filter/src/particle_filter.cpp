@@ -1,8 +1,5 @@
 /*
  * particle_filter.cpp
- *
- *  Created on: Dec 12, 2016
- *      Author: Tiffany Huang
  */
 
 #include <random>
@@ -173,7 +170,7 @@ void ParticleFilter::updateWeights(double sensor_range, double std_landmark[],
 
 			//update the weight by Multivariate-Gaussian probability formula.
 			// I think the weight does not  need to normalize to (0,1), because in resample step 
-			// the function "iscrete_distribution()" will choose the particle by Wi/¦²W,that means
+			// the function "iscrete_distribution()" will choose the particle by Wi/Â¦Â²W,that means
 			// the function will do the job.
 			
 			double dx = global_coord.x - nearest_landmark.x_f;
