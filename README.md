@@ -27,4 +27,3 @@ Labeling the pixels of a road in images using a Fully Convolutional Network (FCN
 #### 13.System-Integration
 Writing ROS nodes to implement core functionality of the autonomous vehicle system, including traffic light detection, control, and waypoint following
 
-#### Note : Due to the limit of the number of files that uploading in one folder, I removed the 'Eigen' library from 'src' folder in these projects written by C++ .  
