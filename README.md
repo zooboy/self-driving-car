@@ -8,3 +8,9 @@ Building and Training a CNN model to recognize the traffic sign.
 Building and Training a CNN model to generate the car's steer behavior.
 #### 4. Advanced_Lane_Lines_Finding
 Using open cv method to find and draw the curve lane lines 
+#### 5. vehicle_detection
+detecting the vehicles on highway by traditional computer vision and mechine learning methods 
+#### 6. Extended-Kalman-Filter
+Tracking  vehicle's (bicycle model) position and velocity by extended-kalman-filter with sensor fusion data from lidar and radar
+#### 7. Unscented-Kalman-Filter
+Tracking  vehicle's (bicycle model) position and velocity by unscented-kalman-filter with sensor fusion data from lidar and radar
