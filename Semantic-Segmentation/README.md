@@ -10,7 +10,7 @@
 
 ### The project information and code running dependencies link : [project info](https://github.com/udacity/CarND-Semantic-Segmentation) 
 
-####1.Overview
+#### 1.Overview
 The project  used a FCN-VGG model to generate semantic-segmentation images.By FCN model we can label each pixel of the original images to a specific class.The FCN model can be divided to 2 parts : the encoder and the decoder.In encoder part, it   works just like a conventional Convnet architecture:conv layers and pooling layers, in this part , mainly used some pretrained architecture,like vgg ,googleNet and so on, but instead the final fully connected layer in these classic architecture to 1x1 fully convolution layer, the spatial information was recorded, That is why we call it Fully Convolution Network(FCN) .The decoder part is a de-convolution process.It uses Skip Connection to combine the output of two layers which can enhance the classify precision observably, and then ,the de-convolution process upsample the previous layer to a higher resolution or dimension. So, after that, each pixel become a 'x',and the 'y' is the class labels. 
 
 
@@ -39,5 +39,4 @@ The inference result of these samples like below:
 
 
 
-#### Buy the way, the inference images all in folder `/runs`, I compressed these images as a .zip file for consideration of the limit of the number of uploading files to Github
 
