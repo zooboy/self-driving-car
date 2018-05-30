@@ -33,7 +33,7 @@ As mentioned in project walkthrough, the car has a little shifting around the re
 
 
 #### Traffic Light Detection Node
-For this node, I used two methods to detect the red lights, for simulator part,the color of images of camara captured is pure ,clear and uniformity, so  I used an open-cv detection solution (Honestly, I learned this method form 'slack' that some students had experienced),the main track of this solution is to filter the red color out of the image, and check the shape of the red part(the shape of red light like a circle).the code and comment in line 73 to 116 in tf_classfier.py, the test effect of this method in file: 
+For this node, I used two methods to detect the red lights, for simulator part,the color of images of camara captured is pure ,clear and uniformity, so  I used an open-cv detection solution ,the main track of this solution is to filter the red color out of the image, and check the shape of the red part(the shape of red light like a circle).the code and comment in line 73 to 116 in tf_classfier.py, the test effect of this method in file: 
 ```
 light_classification/simulator_traffic_lights_detect.ipynb.
 ```
